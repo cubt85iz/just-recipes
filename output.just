@@ -1,6 +1,6 @@
 # Displays an error message to the user.
 display-error MESSAGE:
-  @echo -e '\033[1;31mERROR:\033[0m {{ MESSAGE }}' >&2
+  @echo -e '\033[1;31mERROR:\033[0;1m {{ MESSAGE }}\033[0m' >&2
 
 # Displays an info message to the user.
 display-info MESSAGE:
